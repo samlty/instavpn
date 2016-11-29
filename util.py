@@ -25,9 +25,9 @@ def install_packages():
     if not run_command("apt-get update"):
         return False
 
-    logger.debug('Update packages')
-    if not run_command("apt-get -y upgrade"):
-        return False
+    #logger.debug('Update packages')
+    #if not run_command("apt-get -y upgrade"):
+    #    return False
 
     logger.debug('Install node.js')
     if not run_command("apt-get install -y nodejs-legacy npm build-essential libssl-dev"):
