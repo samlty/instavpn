@@ -26,7 +26,7 @@ def setup_logging():
     pastebin_handler.setLevel(logging.DEBUG)
 
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
+    console_handler.setLevel(logging.DEBUG)
 
     formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s',
         datefmt='%H:%M:%S')
